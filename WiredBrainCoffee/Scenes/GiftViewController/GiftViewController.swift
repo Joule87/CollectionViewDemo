@@ -34,5 +34,17 @@ extension GiftViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
+}
+
+
+extension GiftViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfColumns: CGFloat = 3
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let cellSpaces: CGFloat = (flowLayout.minimumInteritemSpacing * (numberOfColumns - 1))
+        let adjustedWith = collectionView.bounds.width - cellSpaces
+        let width = floor(adjustedWith / numberOfColumns)
+        return CGSize(width: width, height: width)
+    }
+
 }
