@@ -1,30 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c6Y-dL-mUd">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c6Y-dL-mUd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="bHT-OL-g6K">
             <objects>
-                <viewController id="c6Y-dL-mUd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c6Y-dL-mUd" customClass="HomeViewController" customModule="WiredBrainCoffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aLr-b9-6cp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lv4-Z5-lcB">
+                                <rect key="frame" x="10" y="10" width="355" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WeY-gh-cZ1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="57"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="bou-ic-sqD">
+                                        <rect key="frame" x="0.0" y="57" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WOv-6G-dTw">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="homeSectionHeader" id="dOV-5F-kSr" customClass="HeaderCollectionReusableView" customModule="WiredBrainCoffee" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="57"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-ld-VLg">
+                                            <rect key="frame" x="10" y="7" width="335" height="43"/>
+                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="40"/>
+                                            <color key="textColor" red="0.0" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="VJ8-ld-VLg" secondAttribute="trailing" constant="10" id="5tY-jp-L8n"/>
+                                        <constraint firstItem="VJ8-ld-VLg" firstAttribute="leading" secondItem="dOV-5F-kSr" secondAttribute="leading" constant="10" id="BTR-Ah-SLx"/>
+                                        <constraint firstItem="VJ8-ld-VLg" firstAttribute="centerY" secondItem="dOV-5F-kSr" secondAttribute="centerY" id="EvV-Gh-F1v"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="headerLabel" destination="VJ8-ld-VLg" id="5xN-zQ-iUd"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="c6Y-dL-mUd" id="Yco-0s-e8J"/>
+                                    <outlet property="delegate" destination="c6Y-dL-mUd" id="LlT-7N-pe9"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lv4-Z5-lcB" firstAttribute="top" secondItem="snT-cd-XUg" secondAttribute="top" constant="10" id="7hw-AH-dKS"/>
+                            <constraint firstItem="snT-cd-XUg" firstAttribute="trailing" secondItem="lv4-Z5-lcB" secondAttribute="trailing" constant="10" id="VY7-gk-JVN"/>
+                            <constraint firstItem="lv4-Z5-lcB" firstAttribute="leading" secondItem="snT-cd-XUg" secondAttribute="leading" constant="10" id="nUR-PQ-MkN"/>
+                            <constraint firstItem="snT-cd-XUg" firstAttribute="bottom" secondItem="lv4-Z5-lcB" secondAttribute="bottom" constant="10" id="vSO-73-mBo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="snT-cd-XUg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="IJz-Iz-F1k"/>
+                    <connections>
+                        <outlet property="homeCollectionViewController" destination="lv4-Z5-lcB" id="cJR-5J-1FC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZd-2U-dSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198" y="-457"/>
+            <point key="canvasLocation" x="197.59999999999999" y="-457.42128935532236"/>
         </scene>
     </scenes>
     <resources>

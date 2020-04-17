@@ -20,6 +20,8 @@
 		E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046A21BF867000076561 /* GiftCardFunctions.swift */; };
 		E7B5046D21BF919C00076561 /* MockGiftCards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */; };
 		F463AE4D244A2BBD00BD3618 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE4C244A2BBD00BD3618 /* GiftViewController.swift */; };
+		F463AE4F244A4E3C00BD3618 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */; };
+		F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E7B5046A21BF867000076561 /* GiftCardFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardFunctions.swift; sourceTree = "<group>"; };
 		E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MockGiftCards.xcassets; sourceTree = "<group>"; };
 		F463AE4C244A2BBD00BD3618 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */,
+				F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */,
+				F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -246,9 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F463AE4F244A4E3C00BD3618 /* HomeViewController.swift in Sources */,
 				F463AE4D244A2BBD00BD3618 /* GiftViewController.swift in Sources */,
 				E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
+				F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */,
 				E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
