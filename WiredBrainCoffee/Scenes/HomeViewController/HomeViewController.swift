@@ -35,9 +35,18 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "homeSectionHeader", for: indexPath) as! HeaderCollectionReusableView
-        supplementaryView.headerLabel.text = "Colors: \(colorData.count)"
-        return supplementaryView
+        
+        if kind == UICollectionView.elementKindSectionHeader {
+            let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "homeSectionHeader", for: indexPath) as! HeaderCollectionReusableView
+            supplementaryView.headerLabel.text = "Colors: \(colorData.count)"
+            return supplementaryView
+        } else {
+            let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "homeSectionFooter", for: indexPath)
+            supplementaryView.backgroundColor = .purple
+            return supplementaryView
+        }
+        
+        
     }
     
 }

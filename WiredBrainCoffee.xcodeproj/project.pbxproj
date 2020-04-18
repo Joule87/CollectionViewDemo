@@ -22,6 +22,8 @@
 		F463AE4D244A2BBD00BD3618 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE4C244A2BBD00BD3618 /* GiftViewController.swift */; };
 		F463AE4F244A4E3C00BD3618 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */; };
 		F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */; };
+		F4FD0A0A244B917A00F0FA44 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */; };
+		F4FD0A0C244B926200F0FA44 /* OrderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F463AE4C244A2BBD00BD3618 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				E78E378A21BE37A100DF4E57 /* OrderViewController.storyboard */,
+				F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */,
+				F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */,
 			);
 			path = OrderViewController;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 				F463AE4F244A4E3C00BD3618 /* HomeViewController.swift in Sources */,
 				F463AE4D244A2BBD00BD3618 /* GiftViewController.swift in Sources */,
 				E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */,
+				F4FD0A0A244B917A00F0FA44 /* OrderViewController.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
 				F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */,
+				F4FD0A0C244B926200F0FA44 /* OrderCollectionReusableView.swift in Sources */,
 				E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
