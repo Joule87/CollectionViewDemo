@@ -24,6 +24,9 @@
 		F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */; };
 		F4FD0A0A244B917A00F0FA44 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */; };
 		F4FD0A0C244B926200F0FA44 /* OrderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */; };
+		F4FD0A0E244B9ED300F0FA44 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A0D244B9ED300F0FA44 /* OrderCollectionViewCell.swift */; };
+		F4FD0A10244CC1DA00F0FA44 /* GiftCardSeasonalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A0F244CC1DA00F0FA44 /* GiftCardSeasonalCollectionViewCell.swift */; };
+		F4FD0A12244CF9DA00F0FA44 /* SmallGiftCardCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD0A11244CF9DA00F0FA44 /* SmallGiftCardCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F4FD0A0D244B9ED300F0FA44 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4FD0A0F244CC1DA00F0FA44 /* GiftCardSeasonalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardSeasonalCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4FD0A11244CF9DA00F0FA44 /* SmallGiftCardCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallGiftCardCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 				E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */,
 				F463AE4E244A4E3C00BD3618 /* HomeViewController.swift */,
 				F463AE50244A523B00BD3618 /* HeaderCollectionReusableView.swift */,
+				F4FD0A0F244CC1DA00F0FA44 /* GiftCardSeasonalCollectionViewCell.swift */,
+				F4FD0A11244CF9DA00F0FA44 /* SmallGiftCardCollectionViewDataSource.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -83,6 +91,7 @@
 				E78E378A21BE37A100DF4E57 /* OrderViewController.storyboard */,
 				F4FD0A09244B917A00F0FA44 /* OrderViewController.swift */,
 				F4FD0A0B244B926200F0FA44 /* OrderCollectionReusableView.swift */,
+				F4FD0A0D244B9ED300F0FA44 /* OrderCollectionViewCell.swift */,
 			);
 			path = OrderViewController;
 			sourceTree = "<group>";
@@ -259,9 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F463AE4F244A4E3C00BD3618 /* HomeViewController.swift in Sources */,
+				F4FD0A0E244B9ED300F0FA44 /* OrderCollectionViewCell.swift in Sources */,
 				F463AE4D244A2BBD00BD3618 /* GiftViewController.swift in Sources */,
+				F4FD0A12244CF9DA00F0FA44 /* SmallGiftCardCollectionViewDataSource.swift in Sources */,
 				E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */,
 				F4FD0A0A244B917A00F0FA44 /* OrderViewController.swift in Sources */,
+				F4FD0A10244CC1DA00F0FA44 /* GiftCardSeasonalCollectionViewCell.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
 				F463AE51244A523B00BD3618 /* HeaderCollectionReusableView.swift in Sources */,
 				F4FD0A0C244B926200F0FA44 /* OrderCollectionReusableView.swift in Sources */,

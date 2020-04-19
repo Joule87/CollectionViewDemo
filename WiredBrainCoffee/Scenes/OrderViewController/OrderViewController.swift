@@ -34,8 +34,9 @@ class OrderViewController: UIViewController {
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath) as! OrderCollectionViewCell
             cell.backgroundColor = colorData[indexPath.section][indexPath.row]
+            cell.numberLabel.text = "\(indexPath.row)"
             return cell
         }
         
